@@ -93,6 +93,20 @@
                 include('editar.php');
             }
         ?>
+
+        <?php
+            if(isset($_GET['borrar'])){
+                $borrar_id = $_GET['borrar']; //esto es para guardar en una variable el id a borrar
+    
+                $borrar = "DELETE FROM usuarios WHERE id='$borrar_id'";
+                $ejecutar = sqlsrv_query($con, $borrar);
+    
+                if($ejecutar){
+                    echo "<script>alert('El usuario ha sido borrado')</script>";
+                    echo "<script>window.open('formulario.php', '_self')</script>";
+                }	
+            }
+        ?>
     </div>
 
 </body>

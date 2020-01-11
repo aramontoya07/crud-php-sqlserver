@@ -39,18 +39,18 @@
 <?php
 
 	if(isset($_POST['actualizar'])){
-			$actualizar_nombre = $_POST['nombre'];
-			$actualizar_password = $_POST['passw'];
-			$actualizar_mail = $_POST['mail'];
+		$actualizar_nombre = $_POST['nombre'];
+		$actualizar_password = $_POST['passw'];
+		$actualizar_mail = $_POST['mail'];
 
-			$consulta = "UPDATE usuarios SET usuario='$actualizar_nombre', password='$actualizar_password', mail='$actualizar_mail' WHERE id='$editar_id'";
+		$consulta = "UPDATE usuarios SET usuario='$actualizar_nombre', password='$actualizar_password', mail='$actualizar_mail' WHERE id='$editar_id'";
 
-			$ejecutar = sqlsrv_query($con, $consulta);
+		$ejecutar = sqlsrv_query($con, $consulta);
 
-			if($ejecutar){
+		if($ejecutar){
 				echo "<script>alert('Datos actualizados')</script>";
 				echo "<script>window.open('formulario.php', '_self')</script>";
-			}			
-		}
+		}			
+    }
 
 ?>
