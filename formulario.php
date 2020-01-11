@@ -74,7 +74,7 @@
                     $password = $fila['password'];
                     $mail = $fila['mail'];
                     $i++;
-                }
+                
             ?>
             <tr align="center">
                 <td><?php echo $id; ?></td>
@@ -84,7 +84,15 @@
                 <td><a href="formulario.php?editar=<?php echo $id; ?>">Editar</a></td> <!--Para poder editar, edito por el id-->
                 <td><a href="formulario.php?borrar=<?php echo $id; ?>">Borrar</a></td>
             </tr>
+
+                <?php } ?>
         </table>
+
+        <?php
+            if(isset($_GET['editar'])){
+                include('editar.php');
+            }
+        ?>
     </div>
 
 </body>
