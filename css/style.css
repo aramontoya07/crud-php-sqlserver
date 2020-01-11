@@ -1,0 +1,41 @@
+
+.contenedor{
+    background-color: #f7f095;
+}
+
+.titulo-header{
+    color: #818181;
+    margin-left: 370px;
+    padding-top: 30px;
+}
+
+.col-md-8{
+    margin-top: 30px;
+    margin-left: 210px;
+    padding-bottom: 10px;
+}
+.tabla{
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+}
+
+.table{
+    width: 37%;
+    height: 10%;
+    margin-left: 400px;
+    background-color: #ffffff;
+}
+
+.footer{
+    background-color: #f7f095;
+    padding-top: 10px;
+}
+
+.footer>h4{
+    font-size: 20px;
+}
+
+
+
+
+

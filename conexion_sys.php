@@ -5,7 +5,7 @@ $connectionInfo = array("Database"=>"Usuarios", "UID"=>"pruebaUsuarios", "PWD"=>
 $con = sqlsrv_connect($serverName, $connectionInfo);
 
 if($con){
-    echo"conexion exitosa";
+    
 }else{
     echo "fallo la conexión";
     
