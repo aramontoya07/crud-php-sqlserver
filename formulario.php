@@ -42,7 +42,7 @@
         </div>
     </div>
    
-
+   
     <?php
         if(isset($_POST['insert'])){
             $usuario = $_POST['nombre'];
@@ -53,10 +53,12 @@
             $ejecutar = sqlsrv_query($con, $insertar);
 
             if($ejecutar){
-                echo "<h3>Insertado correctamente</h3>";
+                echo "<script>alert('Usuario insertado correctamente')</script>";
             }
         }
-    ?>
+     ?>
+
+    
     <div class="contenedor">
         <div class="tabla">
             <table class="table table-bordered table-responsive">
